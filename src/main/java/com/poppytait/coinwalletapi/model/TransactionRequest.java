@@ -14,4 +14,12 @@ public class TransactionRequest {
     private BigDecimal amount;
     private Instant sentAt;
     private String reference;
+
+    public TransactionRequest(String sourceWalletId, String destinationWalletId, BigDecimal amount, Instant sentAt, String reference) {
+        this.sourceWalletId = sourceWalletId;
+        this.destinationWalletId = destinationWalletId;
+        this.amount = amount;
+        this.sentAt = sentAt;
+        this.reference = reference;
+    }
 }
