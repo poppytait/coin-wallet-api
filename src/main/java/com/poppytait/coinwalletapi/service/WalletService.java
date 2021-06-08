@@ -37,6 +37,5 @@ public class WalletService implements IWalletService {
         wallet.setBalance(balance.add(amount));
 
         repository.save(wallet);
-        // repository.save(new Wallet("1", "user1", new BigDecimal(200)))
     }
 }
